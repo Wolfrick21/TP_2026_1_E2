@@ -10,7 +10,6 @@
   <ItemGroup>
     <Folder Include="Gestores\" />
     <Folder Include="Modelos\" />
-    <Folder Include="Tests\" />
     <Folder Include="Servicios\" />
   </ItemGroup>
 
