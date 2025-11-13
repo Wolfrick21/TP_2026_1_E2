@@ -11,7 +11,7 @@ namespace Examen2.Modelos
             ListasReproduccion = new Dictionary<string, List<Cancion>>();
         }
 
-        public void CrearListaReproducción(string nombre)
+        public void CrearListaReproduccion(string nombre)
         {
             if (ListasReproduccion.ContainsKey(nombre))
             {
