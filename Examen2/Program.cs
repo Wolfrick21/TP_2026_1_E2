@@ -84,7 +84,7 @@ while (true)
                 return;
             }
 
-            gestor.QuickSort(lista, 0, lista.Count - 1);
+            gestor.QuickSortPorDuracion(lista);
             Console.WriteLine($"\nLista \"{listaActual}\" ordenada por duración:");
             CalcularDuracionTotal(lista);
 
