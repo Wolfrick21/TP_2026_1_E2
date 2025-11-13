@@ -1,62 +1,23 @@
 namespace Examen2;
-class Usuario
+internal class Cancion
 {
     public string Nombre { get; set; }
-    public Dictionary<string, List<Cancion>> ListasReproduccion { get; set; }
+    public string Artista { get; set; }
+    public int DuracionSegundos { get; set; }
 
-    public Usuario(string nombre)
+    public Cancion(string nombre, string artista, int duracionSegundos)
     {
         Nombre = nombre;
-        ListasReproduccion = new Dictionary<string, List<Cancion>>();
+        Artista = artista;
+        DuracionSegundos = duracionSegundos;
     }
 
-    public void CrearListaReproducción(string nombre)
+    public override string ToString()
     {
-        if (ListasReproduccion.Contains(nombre))
-        {
-            Console.WriteLine("La lista ya existe");
-        }
-        else
-        {
-            ListasReproduccion[nombre] = new List<Cancion>();
-            Console.WriteLine("Nueva lista creada");
-        }
+        int minutos = DuracionSegundos / 60;
+        int segundos = DuracionSegundos % 60;
+
+        return $"{Nombre} - {Artista} ({minutos}:{segundos:D2})";
     }
 
-    public void AgregarCancionALista( string nombreLista, Cancion cancion)
-    {
-        if (ListasReproduccion.Contains(nombreLista){
-            ListasReproduccion[nombreLista].Add(cancion);
-            Console.WriteLine($"Canción: {cancion.Titulo}, agregada a la lista: {nombreLista}");
-        }
-        else
-        {
-            Console.WriteLine("No existe la lista");
-        }
-    }
-    public void MostrarListasReproduccion()
-    {
-        if (ListasReproduccion.Count == 0)
-        {
-            Console.WriteLine("No tienes listas creadas aún.");
-            return;
-        }
-
-        foreach (var lista in ListasReproduccion)
-        {
-            Console.WriteLine($"\n {lista.Key}:");
-            if (lista.Value.Count == 0)
-            {
-                Console.WriteLine("   (Lista vacía)");
-            }
-            else
-            {
-                foreach (var cancion in lista.Value)
-                {
-                    Console.WriteLine($"   - {cancion}");
-                }
-            }
-
-        }
-    }
 }
