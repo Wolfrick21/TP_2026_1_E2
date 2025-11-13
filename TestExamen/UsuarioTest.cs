@@ -1,25 +1,27 @@
-
+﻿
 namespace TestExamen.Test
 {
-    public class CancionTest
+    public class UsuarioTest
     {
         [Fact]
-        public void Contructor_DebeAsignarValoresCorrectamente()
+        public void CrearListaReproduccion_DebeCrearNuevaLista()
         {
             // Arrange
 
-
             // Act
-
+            
             // Assert
+            
         }
-
         [Fact]
-        public void ToString_DebeRetornarFormatoCorrecto()
+        public void AgregarCancionALista_DebeAgregarCancionAListaExistente()
         {
             // Arrange
+
             // Act
+
             // Assert
+
         }
     }
 }

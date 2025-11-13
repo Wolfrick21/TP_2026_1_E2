@@ -9,5 +9,12 @@
             // Act
             // Assert
         }
+        [Fact]
+        public void BuscarUsuario_DebeRetornarUsuarioExistente()
+        {
+            // Arrange
+            // Act
+            // Assert
+        }
     }
 }
