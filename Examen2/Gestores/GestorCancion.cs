@@ -1,4 +1,5 @@
-﻿namespace Examen2.Gestores
+using Examen2.Modelos;
+namespace Examen2.Gestores
 {
     public class GestorCanciones
     {
