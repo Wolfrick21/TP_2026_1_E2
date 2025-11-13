@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Gestores\" />
-    <Folder Include="Modelos\" />
     <Folder Include="Servicios\" />
   </ItemGroup>
 
