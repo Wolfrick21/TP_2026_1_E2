@@ -1,4 +1,4 @@
-﻿namespace Examen2
+﻿namespace Examen2.Servicios
 {
     public class ServicioMusica
     {

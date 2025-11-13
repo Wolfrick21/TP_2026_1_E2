@@ -1,4 +1,4 @@
-﻿namespace Examen2
+﻿namespace Examen2.Gestores
 {
     public class GestorCanciones
     {
